@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <audio id="over" src="sounds/game over.mp3" preload="auto"></audio>
+        <audio id="score" src="sounds/score.mp3" preload="auto"></audio>
+        <audio  id="fail" src="sounds/fail.mp3" preload="auto"></audio>
+        <audio id="music" src="sounds/music.m4a" preload="auto"></audio>
+        
+
+        <div class="start-container">
+            <span> start the game</span>
+        </div>
+        <div class="over-container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h1 class="text-center">High SCore</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>name </th>
+                                <th>wrong tries</th>
+                                <th>correct tries </th>
+                            </tr>
+                        </thead>
+                        <tbody id="highscore">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <span> game over</span>
+            <button type="button" name="" id="playagain" class="btn btn-success" btn-lg btn-block">play again</button>
+        </div>
+        <div class="info-container container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="name">
+                        hello: <span style="color: #09c;"></span>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-right">
+                    <div class="good">
+                    correct tries: <span>0</span>
+                </div></div>
+                <div class="col-sm-4 text-right">
+                    <div class="tries">
+                    wrong tries: <span>0</span>
+                </div></div>
+            </div>
+            
+            
+        </div>
+        <div class="memory-games-blocks container text-center">
+            <div class="game-block" data-emotions="love">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/love.jpg" alt="love">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="love">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/love.jpg" alt="love">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="power">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/power.jpg" alt="power">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="power">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/power.jpg" alt="power">
+                </div>
+            </div>
+
+            <div class="game-block" data-emotions="mony">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/mony.jpg" alt="love">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="mony">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/mony.jpg" alt="love">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="heirt">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/heirt.jpg" alt="heirt">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="heirt">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/heirt.jpg" alt="heirt">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="gheirt">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/g heirt.jpg" alt="love">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="gheirt">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/g heirt.jpg" alt="gheirt">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="face0">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/face0.jpg" alt="face0">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="face0">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/face0.jpg" alt="face0">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="funka">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/funka.jpg" alt="funka">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="funka">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/funka.jpg" alt="funka">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="bag">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/bag.jpg" alt="bag">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="bag">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/bag.jpg" alt="bag">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="finger">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/finger.jpg" alt="finger">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="finger">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/finger.jpg" alt="finger">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="mob">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/mob.jpg" alt="mob">
+                </div>
+            </div>
+            <div class="game-block" data-emotions="mob">
+                <div class=" same front"><i class="fa fa-question" aria-hidden="true"></i></div>
+                <div class=" same back">
+                    <img src="img/mob.jpg" alt="mob">
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/jquery-3.4.1.min.js" ></script>
+        <script src="js/popper.min.js" ></script>
+        <script src="js/bootstrap.min.js" ></script>
+        <script src="js/index.js" ></script>
+    </body>
+</html>
